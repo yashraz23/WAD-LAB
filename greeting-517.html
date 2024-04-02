@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Greeting</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .morning {
+    color: #ffc107; /* Yellow */
+  }
+  .afternoon {
+    color: #ff9800; /* Orange */
+  }
+  .evening {
+    color: #4caf50; /* Green */
+  }
+  .night {
+    color: #2196f3; /* Blue */
+  }
+</style>
+</head>
+<body>
+<h1 id="greeting"></h1>
+<p>Have a great day!</p>
+
+<script>
+  function getGreeting() {
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour < 12) {
+      greeting = 'Good morning';
+      document.body.classList.add('morning');
+    } else if (hour < 18) {
+      greeting = 'Good afternoon';
+      document.body.classList.add('afternoon');
+    } else {
+      greeting = 'Good evening';
+      document.body.classList.add('evening');
+    }
+
+    return greeting;
+  }
+
+  document.getElementById('greeting').textContent = getGreeting();
+</script>
+</body>
+</html>
