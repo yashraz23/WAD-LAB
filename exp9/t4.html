@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS Task Manager</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div class="container" ng-controller="TaskController">
+      <input type="text" ng-model="newTask" placeholder="Add new task" />
+      <button ng-click="addTask()">Add Task</button>
+
+      <div
+        ng-repeat="task in tasks"
+        class="task-item"
+        ng-class="{ 'completed': task.completed }"
+      >
+        <input
+          type="checkbox"
+          ng-model="task.completed"
+          ng-click="toggleCompleted(task)"
+        />
+        <span>{{ task.name }}</span>
+        <button ng-click="deleteTask(task)">Delete</button>
+      </div>
+    </div>
+
+    <script>
+      var app = angular.module("taskApp", []);
+
+      app.controller("TaskController", function ($scope) {
+        $scope.tasks = [];
+
+        $scope.addTask = function () {
+          if ($scope.newTask.trim() !== "") {
+            $scope.tasks.push({ name: $scope.newTask, completed: false });
+            $scope.newTask = "";
+          }
+        };
+
+        $scope.toggleCompleted = function (task) {
+          task.completed = !task.completed;
+        };
+
+        $scope.deleteTask = function (task) {
+          var index = $scope.tasks.indexOf(task);
+          if (index !== -1) {
+            $scope.tasks.splice(index, 1);
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
