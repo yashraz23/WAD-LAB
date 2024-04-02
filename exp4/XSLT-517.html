@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Major Cities XML Data- 517</title>
+</head>
+<body>
+<h1>Major Cities of the World- 517</h1>
+<div id="xmlTable"></div>
+<script>
+var xml = new XMLHttpRequest();
+xml.open("GET", "cities.xml", true);
+xml.onreadystatechange = function() {
+  if (xml.readyState == 4 && xml.status == 200) {
+    var xsl = new XMLHttpRequest();
+    xsl.open("GET", "cities.xslt", true);
+    xsl.onreadystatechange = function() {
+      if (xsl.readyState == 4 && xsl.status == 200) {
+        var xsltProcessor = new XSLTProcessor();
+        xsltProcessor.importStylesheet(xsl.responseXML);
+        var resultDocument = xsltProcessor.transformToFragment(xml.responseXML, document);
+        document.getElementById("xmlTable").appendChild(resultDocument);
+      }
+    };
+    xsl.send();
+  }
+};
+xml.send();
+</script>
+</body>
+</html>

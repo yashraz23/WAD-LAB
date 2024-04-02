@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cities.xsl"?>
+<Cities>
+<city>
+<id>1</id>
+<name>New York City</name>
+<country>United States</country>
+<population>8,336,817</population>
+<area>783.8 sq km</area>
+<description>New York City is a global financial, cultural, and media hub known for its iconic skyline and diverse population.</description>
+</city>
+<city>
+<id>2</id>
+<name>Tokyo</name>
+<country>Japan</country>
+<population>37,833,000</population>
+<area>2,194 sq km</area>
+<description>Tokyo, the bustling capital of Japan, is famous for its cutting-edge technology, rich traditions, and vibrant pop culture scene.</description>
+</city>
+<city>
+<id>3</id>
+<name>London</name>
+<country>United Kingdom</country>
+<population>8,982,000</population>
+<area>1,572 sq km</area>
+<description>London, the capital of England, is a global city renowned for its historical landmarks, arts, and fashion.</description>
+</city>
+<city>
+<id>4</id>
+<name>Shanghai</name>
+<country>China</country>
+<population>27,058,000</population>
+<area>6,340.5 sq km</area>
+<description>Shanghai is a dynamic metropolis in China, known for its towering skyscrapers, modern architecture, and bustling street life.</description>
+</city>
+<city>
+<id>5</id>
+<name>Mumbai</name>
+<country>India</country>
+<population>20,411,274</population>
+<area>603.4 sq km</area>
+<description>Mumbai, the financial capital of India, is a vibrant city famous for its Bollywood film industry, colonial architecture, and bustling markets.</description>
+</city>
+<city>
+<id>6</id>
+<name>São Paulo</name>
+<country>Brazil</country>
+<population>12,252,023</population>
+<area>1,521 sq km</area>
+<description>São Paulo is the largest city in Brazil, known for its cultural diversity, vibrant nightlife, and sprawling urban landscape.</description>
+</city>
+<city>
+<id>7</id>
+<name>Mexico City</name>
+<country>Mexico</country>
+<population>8,918,653</population>
+<area>1,485 sq km</area>
+<description>Mexico City, the capital of Mexico, is a bustling metropolis steeped in history, with vibrant street markets, museums, and delicious cuisine.</description>
+</city>
+<city>
+<id>8</id>
+<name>Paris</name>
+<country>France</country>
+<population>2,148,271</population>
+<area>105.4 sq km</area>
+<description>Paris, the capital of France, is renowned for its iconic landmarks such as the Eiffel Tower, world-class museums, and romantic atmosphere.</description>
+</city>
+<city>
+<id>9</id>
+<name>Moscow</name>
+<country>Russia</country>
+<population>12,506,468</population>
+<area>2,511 sq km</area>
+<description>Moscow, the capital of Russia, is a city of contrasts, blending historic architecture with modern skyscrapers, and is known for its rich cultural heritage.</description>
+</city>
+<city>
+<id>10</id>
+<name>Cairo</name>
+<country>Egypt</country>
+<population>9,907,000</population>
+<area>606 sq km</area>
+<description>Cairo, the capital of Egypt, is a city steeped in history, with iconic landmarks such as the Pyramids of Giza and vibrant markets along the Nile River.</description>
+</city>
+<city>
+<id>11</id>
+<name>Seoul</name>
+<country>South Korea</country>
+<population>9,963,000</population>
+<area>605.2 sq km</area>
+<description>Seoul, the capital of South Korea, is a dynamic city blending traditional culture with modernity, known for its bustling markets, high-tech infrastructure, and K-pop music scene.</description>
+</city>
+<city>
+<id>12</id>
+<name>Lagos</name>
+<country>Nigeria</country>
+<population>21,000,000</population>
+<area>1,171 sq km</area>
+<description>Lagos is the largest city in Nigeria and one of the fastest-growing cities in the world, known for its vibrant street life, bustling markets, and music scene.</description>
+</city>
+<city>
+<id>13</id>
+<name>Buenos Aires</name>
+<country>Argentina</country>
+<population>2,891,082</population>
+<area>203 sq km</area>
+<description>Buenos Aires, the capital of Argentina, is known for its European-inspired architecture, vibrant tango scene, and delicious cuisine.</description>
+</city>
+<city>
+<id>14</id>
+<name>Delhi</name>
+<country>India</country>
+<population>18,600,000</population>
+<area>1,484 sq km</area>
+<description>Delhi, the capital of India, is a bustling metropolis blending historic landmarks such as the Red Fort with modern developments, vibrant markets, and diverse cuisine.</description>
+</city>
+<city>
+<id>15</id>
+<name>Beijing</name>
+<country>China</country>
+<population>21,516,000</population>
+<area>16,410 sq km</area>
+<description>Beijing, the capital of China, is a city rich in history and culture, with iconic landmarks such as the Great Wall and the Forbidden City, as well as modern skyscrapers and bustling markets.</description>
+</city>
+<city>
+<id>16</id>
+<name>Rio de Janeiro</name>
+<country>Brazil</country>
+<population>6,747,815</population>
+<area>1,182 sq km</area>
+<description>Rio de Janeiro, known for its stunning beaches, vibrant Carnival celebrations, and iconic landmarks like Sugarloaf Mountain and Christ the Redeemer statue, is one of Brazil's most famous cities.</description>
+</city>
+<city>
+<id>17</id>
+<name>Karachi</name>
+<country>Pakistan</country>
+<population>14,910,352</population>
+<area>591 sq km</area>
+<description>Karachi, the largest city in Pakistan, is a bustling port city known for its rich history, diverse culture, and vibrant street life.</description>
+</city>
+<city>
+<id>18</id>
+<name>Los Angeles</name>
+<country>United States</country>
+<population>3,971,883</population>
+<area>1,302 sq km</area>
+<description>Los Angeles, the entertainment capital of the world, is known for its diverse culture, iconic landmarks such as Hollywood and Beverly Hills, and thriving entertainment industry.</description>
+</city>
+<city>
+<id>19</id>
+<name>Istanbul</name>
+<country>Turkey</country>
+<population>15,029,231</population>
+<area>5,343 sq km</area>
+<description>Istanbul, straddling Europe and Asia, is a city rich in history and culture, with iconic landmarks such as the Hagia Sophia and the Blue Mosque, bustling markets, and delicious cuisine.</description>
+</city>
+<city>
+<id>20</id>
+<name>Lima</name>
+<country>Peru</country>
+<population>9,751,717</population>
+<area>2,672 sq km</area>
+<description>Lima, the capital of Peru, is a vibrant city known for its colonial architecture, rich history, and diverse culinary scene, including its famous ceviche.</description>
+</city>
+</Cities>
