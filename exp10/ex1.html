@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS Email Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div class="container" ng-controller="EmailController">
+      <form name="emailForm" ng-submit="submitForm()" novalidate>
+        <input
+          type="email"
+          ng-model="email"
+          name="email"
+          placeholder="Enter your email"
+          ng-pattern="/^.+@.+\..+$/"
+          required
+        />
+        <div
+          class="error"
+          ng-show="emailForm.email.$dirty && emailForm.email.$invalid"
+        >
+          <span ng-show="emailForm.email.$error.required"
+            >Email is required.</span
+          >
+          <span ng-show="emailForm.email.$error.pattern"
+            >Invalid email address.</span
+          >
+        </div>
+
+        <button type="submit" ng-disabled="emailForm.$invalid">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      var app = angular.module("myApp", []);
+
+      app.controller("EmailController", function ($scope) {
+        $scope.submitForm = function () {
+          if ($scope.emailForm.$valid) {
+            alert("Form submitted successfully with email: " + $scope.email);
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
