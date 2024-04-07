@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gordon Murray Automotive</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .col {
+    flex: 1;
+  }
+  #header {
+    background-color: #164805;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+  }
+  #logo {
+    width: 150px; /* Adjusted logo size */
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    
+    height: 700px; /* Adjusted height */
+  }
+  #nav {
+    background-color: #222;
+    border-right: 1px solid #333;
+  }
+  #nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display list items horizontally */
+}
+
+#nav li {
+  margin-bottom: 0; /* Remove margin below list items */
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  padding: 10px; /* Add padding to list items */
+}
+
+#nav a:hover {
+  color: #f8b400;
+}
+
+  
+  #content {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #fff;
+    border-top: 0px solid #333;
+    border-left: 2px solid #333;
+    overflow: hidden; /* Ensure iframe doesn't overflow */
+    padding: 20px; /* Added padding */
+  }
+  #footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  #footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  #footer a:hover {
+    color: #f8b400;
+  }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div class="row">
+    <div class="col">
+      <img id="logo" src="C:\Users\Yash\Videos\WAD-1\gordon-murray.png" alt="Logo">
+    </div>
+    <div class="col">
+      <h1 style="margin: 0; font-size: 24px;">Gordon Murray Automotive</h1> <!-- Adjusted font size -->
+    </div>
+  </div>
+</div>
+
+<div id="main">
+  <div id="nav" class="col">
+    <ul>
+      <li><a href="#" onclick="loadPage('home.html')">Home</a></li>
+      <li><a href="#" onclick="loadPage('models.html')">Models</a></li>
+      <li><a href="#" onclick="loadPage('gallery.html')">Gallery</a></li>
+      <li><a href="#" onclick="loadPage('specs.html')">Specifications</a></li>
+      <li><a href="#" onclick="loadPage('contact.html')">Contact Us</a></li>
+    </ul>
+  </div>
+  <div id="content" class="col" style="background-color: red; background-size: contain; height: auto;">
+    Content will be loaded here
+  </div>
+</div>
+
+<div id="footer">
+  <a href="#">Terms of Service</a>
+  <a href="#">Privacy Policy</a>
+</div>
+
+<script>
+  function loadPage(page) {
+    var content = document.getElementById('content');
+    content.innerHTML = '';
+    var iframe = document.createElement('iframe');
+    iframe.src = page;
+    iframe.style.width = '100%';
+    iframe.style.height = 'calc(100% - 5px)'; /* Subtract footer height */
+    iframe.style.border = 'none';
+    content.appendChild(iframe);
+  }
+</script>
+
+</body>
+</html>
